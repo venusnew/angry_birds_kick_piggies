@@ -10,10 +10,15 @@
   <div id="flash-game-container" style="width: 800px; height: 600px;"></div>
   <script>
     window.RufflePlayer = window.RufflePlayer || {};
-    const ruffle = window.RufflePlayer.newest();
-    const player = ruffle.createPlayer();
-    document.getElementById("flash-game-container").appendChild(player);
-    player.load("angry_birds_kick_piggies_by_venuskawaiigames-d9rfd4d.swf"); // Ruta del archivo SWF
-  </script>
+
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("angry_birds_kick_piggies_by_venuskawaiigames-d9rfd4d.swf");
+        container.appendChild(player);
+        player.load("angry_birds_kick_piggies_by_venuskawaiigames-d9rfd4d.swf");
+    });
+</script>
+<script src="path/to/ruffle/ruffle.js"></script>
 </body>
 </html>
