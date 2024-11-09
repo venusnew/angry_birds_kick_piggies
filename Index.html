@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <script>
+<script>
     window.RufflePlayer = window.RufflePlayer || {};
 
     window.addEventListener("DOMContentLoaded", () => {
         let ruffle = window.RufflePlayer.newest();
         let player = ruffle.createPlayer();
-        let container = document.getElementById("angry_birds_kick_piggies_by_venuskawaiigames-d9rfd4d.swf");
+        let container = document.getElementById("container");
         container.appendChild(player);
-        player.load("angry_birds_kick_piggies_by_venuskawaiigames-d9rfd4d.swf");
+        player.load("movie.swf");
     });
 </script>
 <script src="path/to/ruffle/ruffle.js"></script>
-</body>
-</html>
